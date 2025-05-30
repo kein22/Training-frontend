@@ -68,24 +68,24 @@ footer {
 }
 
 .profile img{
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
     border: 8px solid #f0f4fa;
     background: #f0f4fa;
-    margin-left: 400px;
+    margin-left: 100px;
 }
 
 .button {
-  background-color: #f44336; 
+  background-color: #f74d4d; 
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 15px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 15px;
+  font-size: 20px;
   margin: 4px 2px;
   cursor: pointer;
 }
@@ -231,7 +231,12 @@ footer {
   color: #23263b;
   margin: 0;
   padding: 8px 0;
-  /* Nếu muốn viền vàng cho đoạn mô tả, thêm class highlight */
+}
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  margin-right: 16px;
 }
 
 @media (max-width: 768px) {
@@ -247,15 +252,29 @@ footer {
     padding: 8px 0;
   }
 
-  nav {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
+   nav {
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    left: 530px;
+    top: 0;
   }
 
   nav a {
-    margin-left: 0;
-    font-size: 16px;
+    display: none;
+    background: #fff;
+    color: #23263b;
+    padding: 12px 0;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+  }
+
+  nav.active a {
+    display: block;
   }
 
   .profile {
@@ -274,13 +293,13 @@ footer {
   }
 
   .profile img {
-    width: 160px;
-    height: 160px;
+    width: 200px;
+    height: 200px;
     margin-left: 0;
   }
 
   .button {
-    width: 90%;
+    width: 30%;
     font-size: 16px;
     padding: 12px 0;
   }
@@ -300,11 +319,11 @@ footer {
   .recent-posts-header h1 {
     font-size: 24px;
     margin-bottom: 4px;
+    margin: auto;
   }
 
   .view-all {
-    font-size: 16px;
-    align-self: flex-end;
+    display: none;
   }
 
   .posts-list {
@@ -343,6 +362,7 @@ footer {
   .featured-works h2 {
     font-size: 22px;
     margin-bottom: 18px;
+    text-align: center;
   }
 
   .work-card {
