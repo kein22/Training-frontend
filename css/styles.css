@@ -1,0 +1,384 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background: #ffffff;
+    color: black;
+    padding: 10px 0;
+    text-align: right;
+    margin-right: 50px;
+    font-weight: bold;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+nav a {
+    margin-left: 24px;
+   
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+footer {
+    background: #ffffff;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 80%;
+    margin: 40px auto;;
+}
+
+.profile-info p {
+    text-align: justify;
+    max-width: 500px;
+}
+
+.profile img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid #f0f4fa;
+    background: #f0f4fa;
+    margin-left: 400px;
+}
+
+.button {
+  background-color: #f44336; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.recent-posts {
+  background: #f5f9fa;
+  padding: 40px 0;
+}
+
+.recent-posts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto 24px auto;
+}
+
+.recent-posts-header h1 {
+  font-weight: 10;
+  font-family: 'Arial', 'Roboto', sans-serif;
+}
+
+.recent-posts-header h2 {
+  color: #23263b;
+  font-size: 32px;
+  margin: 0;
+}
+
+.view-all {
+  color: #23a6f0;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.posts-list {
+  display: flex;
+  gap: 32px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.post-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 32px;
+  flex: 1;
+  min-width: 300px;
+}
+
+.post-card h2 {
+  color: #23263b;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.post-meta {
+  color: #23263b;
+  font-size: 18px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.divider {
+  color: #23263b;
+}
+
+.post-card p {
+  color: #23263b;
+  font-size: 18px;
+  margin: 0;
+}
+
+
+.featured-works{
+    width: 80%;
+    margin: 40px auto;;
+}
+
+.featured-works h2 {
+  
+  margin-bottom: 32px;
+  color: #23263b;
+  font-weight: 10;
+  font-family: 'Arial', 'Roboto', sans-serif;
+}
+
+.work-card{
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    margin-bottom: 40px;
+    padding-bottom: 32px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.work-img{
+    width: 200px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.work-info{
+    flex: 1;
+}
+
+.work-info h3{
+    font-size: 32px;
+    color:#23263b;
+    margin: 0 0 12px 0;
+    font-weight: bold;
+}
+
+.work-meta{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.work-year{
+   background: #000;
+   color: #fff;
+   border-radius: 20px;
+   padding: 6px 18px;
+   font-weight: bold;
+   font-size: 15px;
+   display: inline-block;
+}
+
+.work-type {
+  color: #6e6c6c;
+  font-size: 15px;
+}
+
+.work-desc {
+  font-size: 18px;
+  color: #23263b;
+  margin: 0;
+  padding: 8px 0;
+  /* Nếu muốn viền vàng cho đoạn mô tả, thêm class highlight */
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  header {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    padding: 8px 0;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  nav a {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .profile {
+    flex-direction: column;
+    gap: 24px;
+    width: 98%;
+    margin: 24px auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-info p {
+    max-width: 100%;
+    font-size: 15px;
+    padding: 0 8px;
+  }
+
+  .profile img {
+    width: 160px;
+    height: 160px;
+    margin-left: 0;
+  }
+
+  .button {
+    width: 90%;
+    font-size: 16px;
+    padding: 12px 0;
+  }
+
+  .recent-posts {
+    padding: 24px 0;
+  }
+
+  .recent-posts-header {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 98%;
+    gap: 8px;
+    margin: 0 auto 16px auto;
+  }
+
+  .recent-posts-header h1 {
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+
+  .view-all {
+    font-size: 16px;
+    align-self: flex-end;
+  }
+
+  .posts-list {
+    flex-direction: column;
+    gap: 20px;
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .post-card {
+    min-width: unset;
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .post-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .post-meta {
+    font-size: 14px;
+    margin-bottom: 10px;
+    gap: 8px;
+  }
+
+  .post-card p {
+    font-size: 14px;
+  }
+
+  .featured-works {
+    width: 98%;
+    margin: 24px auto;
+  }
+
+  .featured-works h2 {
+    font-size: 22px;
+    margin-bottom: 18px;
+  }
+
+  .work-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding-bottom: 18px;
+    margin-bottom: 24px;
+  }
+
+  .work-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    border-radius: 8px;
+  }
+
+  .work-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .work-meta {
+    font-size: 13px;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .work-year, .work-type {
+    font-size: 13px;
+    padding: 4px 10px;
+  }
+
+  .work-desc {
+    font-size: 14px;
+    padding: 4px 0;
+  }
+}
+
